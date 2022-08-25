@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Impressum</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <section class="container mb-60">
+      <nav class="navigation-mobile">
+        <div class="menu-btn">
+          <span class="first-line"></span>
+          <span class="second-line"></span>
+          <span class="third-line"></span>
+        </div>
+        <ul class="navbar-mobile">
+          <li><a href="/main.html">Home</a></li>
+          <li><a href="/about-me.html">About</a></li>
+          <li><a href="">My Work</a></li>
+          <li><a href="">Linkdin</a></li>
+          <li><a href="/contact-me.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="navigation">
+        <a href="/main.html"
+          ><img src="./assets/images/Logo.png" alt="Logo" width="117" height="149"
+        /></a>
+        <ul class="navbar">
+          <li><a href="/about-me.html">About</a></li>
+          <li><a href="/main.html">My Work</a></li>
+          <li><a href="">Linkdin</a></li>
+          <li><a href="/contact-me.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main class="impressum mt-10">
+        <h2 class="title">Impressum</h2>
+        <div>
+          <p>Angaben gem. § 5 TMG:</p>
+          <p>Vorname, Name: Hemmati Paniz</p>
+          <p>Adresse: Rykestraße 47, 10405 Berlin</p>
+          <p>PLZ: 10405</p>
+          <p>Telefon: 004917635730444</p>
+          <p>E-Mail: paniz4796@gmail.com</p>
+        </div>
+        <div>
+          <p>Umsatzsteuer-ID</p>
+        </div>
+        <div>
+          <p>Umsatzsteuer-Identifikationsnummer gem. § 27 a Umsatzsteuergesetz:</p>
+          <p>DE XXX XXX XXX</p>
+        </div>
+      </main>
+    </section>
+    <!-- elips -->
+    <div class="elipse-container">
+      <div class="about-two">
+        <div class="object circle" data-value="90"></div>
+      </div>
+      <div class="about-three">
+        <img
+          class="object"
+          data-value="-150"
+          src="./assets/images/about-image/Ellipse 5 (2).png"
+          alt=""
+        />
+      </div>
+      <div class="about-five">
+        <img
+          class="object"
+          data-value="140"
+          src="./assets/images/about-image/Ellipse 5 (3).png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="background-mobile">
+      <div class="red-background"></div>
+      <div class="yellow-background"></div>
+      <div class="orange-background"></div>
+    </div>
+    <script>
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        document.querySelectorAll(".object").forEach((move) => {
+          let movingValue = move.getAttribute("data-value");
+          const x = (e.clientX * movingValue) / 150;
+          const y = (e.clientY * movingValue) / 150;
+
+          move.style.transform = " translateX(" + x + "px) translateY(" + 100 + "px)  ";
+        });
+      }
+    </script>
+    <script src="./app.js"></script>
+  </body>
+</html>

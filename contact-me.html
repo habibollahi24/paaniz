@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Contact-Me</title>
+  </head>
+  <body>
+    <!-- alert   -->
+    <div class="alert-container">
+      <p class="alert-text"></p>
+    </div>
+    <!-- navigation -->
+    <section class="container mb-60">
+      <nav class="navigation-mobile">
+        <div class="menu-btn">
+          <span class="first-line"></span>
+          <span class="second-line"></span>
+          <span class="third-line"></span>
+        </div>
+        <ul class="navbar-mobile">
+          <li><a href="/main.html">Home</a></li>
+          <li><a href="/about-me.html">About</a></li>
+          <li><a href="">My Work</a></li>
+          <li><a href="">Linkdin</a></li>
+          <li><a href="/contact-me.html" class="active-link-mobile">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="navigation">
+        <a href="/main.html"
+          ><img src="./assets/images/Logo.png" alt="Logo" width="117" height="149"
+        /></a>
+        <ul class="navbar">
+          <li><a href="/about-me.html">About</a></li>
+          <li><a href="/main.html">My Work</a></li>
+          <li><a href="">Linkdin</a></li>
+          <li><a href="/contact-me.html" class="active-link">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Form -->
+    <section class="container mb-60 mt-10">
+      <form class="form">
+        <div class="row">
+          <div class="row-field">
+            <input id="name" class="input-validation" type="text" />
+            <label for="">First name *</label>
+          </div>
+          <div class="row-field">
+            <input id="family" class="input-validation" type="text" />
+            <label for="">Family name*</label>
+          </div>
+          <div class="row-field">
+            <input type="text" />
+            <label for="">Company name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-field">
+            <input id="city" class="input-validation" type="text" />
+            <label for="">City*</label>
+          </div>
+          <div class="row-field">
+            <input id="country" class="input-validation" type="text" />
+            <label for="">Country*</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-field">
+            <input id="email" class="input-validation" type="text" />
+            <div class="email-valid-container">
+              <label for="">E-Mail*</label>
+              <p class="text-email-validation"></p>
+            </div>
+          </div>
+          <div class="row-field">
+            <input type="text" />
+            <label for="">Telefon number</label>
+          </div>
+          <div class="row-field">
+            <input type="text" />
+            <label for="">Website</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-field">
+            <textarea name="" id="" cols="85" rows="7"></textarea>
+            <label for="">Additional Text</label>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn w-100" style="padding: 1rem 3rem">Submit</button>
+        </div>
+      </form>
+    </section>
+    <!-- elips -->
+    <div class="elipse-container">
+      <div class="about-two">
+        <div class="object circle" data-value="90"></div>
+      </div>
+      <div class="about-three">
+        <img
+          class="object"
+          data-value="-100"
+          src="./assets/images/about-image/Ellipse 5 (2).png"
+          alt=""
+        />
+      </div>
+      <div class="about-five">
+        <img
+          class="object"
+          data-value="100"
+          src="./assets/images/about-image/Ellipse 5 (3).png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="background-mobile">
+      <div class="red-background"></div>
+      <div class="yellow-background"></div>
+      <div class="orange-background"></div>
+    </div>
+    <div class="background-mobile">
+      <div class="red-background-down"></div>
+      <div class="yellow-background-down"></div>
+      <div class="orange-background-down"></div>
+    </div>
+
+    <script>
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        document.querySelectorAll(".object").forEach((move) => {
+          let movingValue = move.getAttribute("data-value");
+          const x = (e.clientX * movingValue) / 150;
+          const y = (e.clientY * movingValue) / 150;
+
+          move.style.transform = " translateX(" + x + "px) translateY(" + 100 + "px)  ";
+        });
+      }
+    </script>
+    <script src="./app.js"></script>
+    <script src="./form.js"></script>
+  </body>
+</html>
