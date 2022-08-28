@@ -57,7 +57,7 @@
       </div>
     </section>
     <div class="chevron-double">
-      <i class="bi bi-chevron-double-down"></i>
+      <a href="#more"><i class="bi bi-chevron-double-down"></i></a>
     </div>
     <!-- my work -->
     <section id="my-work" class="container mb-60">
@@ -90,8 +90,7 @@
             <h1>Sleep App</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-              dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-              sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget or purus.
+              dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
             </p>
             <a href="#">More about this project</a>
           </div>
@@ -102,8 +101,19 @@
             <h1>Sleep App</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-              dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-              sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget or purus.
+              dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
+            </p>
+            <a href="#">More about this project</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/images/Screenshot.png" />
+          <div class="info">
+            <h1>Sleep App</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+              dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
             </p>
             <a href="#">More about this project</a>
           </div>
@@ -114,20 +124,7 @@
             <h1>Sleep App</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-              dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-              sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget or purus.
-            </p>
-            <a href="#">More about this project</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/images/Screenshot.png" />
-          <div class="info">
-            <h1>Sleep App</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-              dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-              sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget or purus.
+              dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
             </p>
             <a href="#">More about this project</a>
           </div>
@@ -144,19 +141,19 @@
     </footer>
     <div class="elipse-container">
       <div class="elipse-more">
-        <img class="objec" data-value="150" src="./assets/images/Ellipse--more.png" alt="" />
+        <img class="objec" data-value="110" src="./assets/images/Ellipse--more.png" alt="" />
       </div>
       <div class="elipse-4">
-        <img class="object" data-value="-150" src="./assets/images/Ellipse 4.png" alt="" />
+        <img class="object" data-value="-110" src="./assets/images/Ellipse 4.png" alt="" />
       </div>
       <div class="elipse-1">
-        <img class="object" data-value="150" src="./assets/images/Ellipse 1.png" alt="" />
+        <img class="object" data-value="110" src="./assets/images/Ellipse 1.png" alt="" />
       </div>
       <div class="elipse-5">
-        <img class="object" data-value="-150" src="./assets/images/Ellipse 5.png" alt="" />
+        <img class="object" data-value="-110" src="./assets/images/Ellipse 5.png" alt="" />
       </div>
       <div class="elipse-7">
-        <img class="object" data-value="-150" src="./assets/images/Ellipse 7.png" alt="" />
+        <img class="object" data-value="-110" src="./assets/images/Ellipse 7.png" alt="" />
       </div>
     </div>
     <div class="background-mobile">
@@ -175,10 +172,10 @@
       function parallax(e) {
         document.querySelectorAll(".object").forEach((move) => {
           let movingValue = move.getAttribute("data-value");
-          const x = (e.clientX * movingValue) / 150;
-          const y = (e.clientY * movingValue) / 150;
+          const x = (e.clientX * movingValue) / 200;
+          const y = (e.clientY * movingValue) / 200;
 
-          move.style.transform = " translateX(" + x + "px) translateY(" + y + "px)   ";
+          move.style.transform = " translateX(" + x + "px) translateY(" + -200 + "px)   ";
         });
       }
     </script>

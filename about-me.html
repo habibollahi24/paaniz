@@ -71,7 +71,7 @@
       <div class="about-three">
         <img
           class="object"
-          data-value="-150"
+          data-value="-90"
           src="./assets/images/about-image/Ellipse 5 (2).png"
           alt=""
         />
@@ -79,7 +79,7 @@
       <div class="about-five">
         <img
           class="object"
-          data-value="-140"
+          data-value="-90"
           src="./assets/images/about-image/Ellipse 5 (3).png"
           alt=""
         />
@@ -100,10 +100,10 @@
       function parallax(e) {
         document.querySelectorAll(".object").forEach((move) => {
           let movingValue = move.getAttribute("data-value");
-          const x = (e.clientX * movingValue) / 150;
-          const y = (e.clientY * movingValue) / 150;
+          const x = (e.clientX * movingValue) / 250;
+          const y = (e.clientY * movingValue) / 250;
 
-          move.style.transform = " translateX(" + x + "px) translateY(" + -150 + "px)  ";
+          move.style.transform = " translateX(" + x + "px) translateY(" + -200 + "px)  ";
         });
       }
     </script>
