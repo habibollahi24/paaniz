@@ -8,10 +8,10 @@ menuBtn.addEventListener("click", () => {
   navbarMobile.classList.toggle("animation-nav");
 });
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    navigationMobile.classList.add("shadow");
-  } else {
-    navigationMobile.classList.remove("shadow");
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > 50) {
+//     navigationMobile.classList.add("shadow");
+//   } else {
+//     navigationMobile.classList.remove("shadow");
+//   }
+// });
