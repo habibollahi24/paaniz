@@ -204,7 +204,7 @@ li {
   display: flex;
   justify-content: flex-end;
   color: #777575;
-  margin-top: -6rem;
+  margin-top: -2rem;
   /* width: 815px; */
 }
 .hero h1 {
@@ -254,7 +254,7 @@ li {
   text-align: center;
   font-size: 3rem;
   color: #9e9e9e;
-  margin: 0px 0 120px 0;
+  margin: 50px 0 120px 0;
 }
 .chevron-double a {
   color: #9e9e9e;
@@ -838,6 +838,15 @@ footer {
     text-align: left;
     margin-top: 1rem;
   }
+  .about-image {
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .about-image img {
+    width: 100%;
+    height: auto;
+  }
   .impressum .title {
     text-align: left;
   }
@@ -862,7 +871,7 @@ footer {
     padding: 0.5rem;
     text-align: left !important;
     padding-right: 0rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 30px;
   }
