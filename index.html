@@ -8,6 +8,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/swiper.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Home</title>
   </head>
@@ -83,52 +85,58 @@
     <!-- more -->
     <section id="more" class="container mb-60">
       <h2 class="title">More...</h2>
-      <div class="more-container">
-        <div class="card">
-          <img src="./assets/images/Screenshot.png" />
-          <div class="info">
-            <h1>Sleep App</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-              dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
-            </p>
-            <a href="#">More about this project</a>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/Screenshot.png" alt="" />
+            <div class="card-info">
+              <p class="text-title">Sleep App</p>
+              <p class="text-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+                dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+                sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget or purus.
+              </p>
+              <a href="#" class="card-button">More about this project</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Screenshot.png" alt="" />
+            <div class="card-info">
+              <p class="text-title">Sleep App</p>
+              <p class="text-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+                dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+                sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget or purus.
+              </p>
+              <a href="#" class="card-button">More about this project</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Screenshot.png" alt="" />
+            <div class="card-info">
+              <p class="text-title">Sleep App</p>
+              <p class="text-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+                dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+                sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget or purus.
+              </p>
+              <a href="#" class="card-button">More about this project</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Screenshot.png" alt="" />
+            <div class="card-info">
+              <p class="text-title">Sleep App</p>
+              <p class="text-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+                dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+                sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget or purus.
+              </p>
+              <a href="#" class="card-button">More about this project</a>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img src="./assets/images/Screenshot.png" />
-          <div class="info">
-            <h1>Sleep App</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-              dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
-            </p>
-            <a href="#">More about this project</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="./assets/images/Screenshot.png" />
-          <div class="info">
-            <h1>Sleep App</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-              dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
-            </p>
-            <a href="#">More about this project</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/images/Screenshot.png" />
-          <div class="info">
-            <h1>Sleep App</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-              dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
-            </p>
-            <a href="#">More about this project</a>
-          </div>
-        </div>
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
     </section>
 
@@ -178,6 +186,35 @@
           move.style.transform = " translateX(" + x + "px) translateY(" + -200 + "px)   ";
         });
       }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            padding: 5,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+        },
+        // slidesPerView: 2,
+        centeredSlides: false,
+        spaceBetween: 15,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
     <script src="./app.js"></script>
   </body>
