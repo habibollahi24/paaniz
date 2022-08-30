@@ -31,7 +31,7 @@
 body {
   font-family: pappins;
   font-weight: 300;
-  background-color: #fff;
+  background-color: #f9fafb;
   color: #777575;
   position: relative;
   overflow-x: hidden;
@@ -54,6 +54,9 @@ li {
 
 .mb-60 {
   margin-bottom: 60px;
+}
+.mb-10 {
+  margin-bottom: 10rem !important;
 }
 .w-50 {
   width: 50%;
@@ -568,6 +571,9 @@ footer {
 /* Responsive */
 
 @media screen and (max-width: 700px) {
+  .mb-10 {
+    margin-bottom: 1rem !important;
+  }
   .contact-hidden {
     display: block;
     margin-bottom: 5rem !important;
@@ -671,7 +677,7 @@ footer {
     margin-bottom: 1.5rem;
     width: 100%;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .about-me .title {
     text-align: left;
