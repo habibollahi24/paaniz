@@ -8,7 +8,6 @@
 }
 
 .swiper-slide {
-  width: 50%;
   position: relative;
   text-align: center;
   font-size: 18px;
@@ -199,6 +198,7 @@
 @media screen and (max-width: 1124px) {
   .swiper {
     padding: 1rem 2rem;
+    width: 100% !important;
   }
   .card-info {
     position: absolute;
