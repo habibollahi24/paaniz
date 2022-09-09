@@ -231,23 +231,34 @@ li {
   position: relative;
   z-index: 100;
   padding: 0.8rem 3.5rem;
-  background-color: #ffffff;
-
   color: #777575;
   font-weight: 500 !important;
   border: 2px solid #aaaaaa;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.1s all ease-in-out;
+  transition: background-image 0.8s ease-in-out;
   font-size: 20px;
+  overflow: hidden;
 }
 .btn a {
   color: inherit;
 }
-.btn:hover {
-  background-color: #aaaaaa;
-  color: #fff;
-  border: 2px solid #888;
+.btn::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 150px;
+  height: 120px;
+  border-radius: 100%;
+  background-color: #f0f69b;
+  filter: blur(25px);
+  transition: all 0.5s ease-in-out;
+
+  left: -3%;
+  top: -50%;
+}
+.btn:hover::after {
+  transform: translateX(220px);
 }
 
 .chevron-double {
@@ -273,12 +284,6 @@ li {
   100% {
     transform: translateY(7px);
   }
-  /* from {
-    transform: translateY(10px);
-  }
-  to {
-    transform: translateY(20px);
-  } */
 }
 .chevron-double a {
   color: #9e9e9e;
@@ -808,9 +813,29 @@ footer {
     height: 400px;
     background-color: #f9ffa4;
     border-radius: 100%;
-    filter: blur(70px);
+    filter: blur(60px);
+    animation: yellow-move 13s infinite;
     z-index: -100;
     transform: translate(-50%);
+    /* border: 2px solid red; */
+    transition: 0.5s all ease-in-out;
+  }
+  @keyframes yellow-move {
+    0% {
+      transform: translate(-50%);
+    }
+    25% {
+      transform: translate(50%);
+    }
+    50% {
+      transform: translate(0, -30%);
+    }
+    75% {
+      transform: translate(0, 50%);
+    }
+    100% {
+      transform: translate(-50%);
+    }
   }
   .red-background {
     position: absolute;
@@ -821,6 +846,7 @@ footer {
     background-color: #ffa1a1;
     border-radius: 100%;
     filter: blur(200px);
+    animation: yellow-move 10s infinite;
     z-index: -100;
   }
   .orange-background {
@@ -831,7 +857,9 @@ footer {
     height: 500px;
     background-color: #ffcaad;
     border-radius: 100%;
-    filter: blur(70px);
+    filter: blur(60px);
+    animation: yellow-move 10s infinite;
+
     z-index: -100;
   }
   .yellow-background-down {
@@ -842,7 +870,8 @@ footer {
     height: 400px;
     background-color: #f9ffa4;
     border-radius: 100%;
-    filter: blur(70px);
+    filter: blur(60px);
+    animation: yellow-move 10s infinite;
     z-index: -100;
     transform: translate(-50%);
   }
@@ -854,7 +883,8 @@ footer {
     height: 300px;
     background-color: #ffa1a1;
     border-radius: 100%;
-    filter: blur(200px);
+    filter: blur(180px);
+    animation: yellow-move 10s infinite;
     z-index: -100;
   }
   .orange-background-down {
@@ -865,7 +895,8 @@ footer {
     height: 500px;
     background-color: #ffcaad;
     border-radius: 100%;
-    filter: blur(70px);
+    filter: blur(60px);
+    animation: yellow-move 10s infinite;
     z-index: -100;
   }
 }
