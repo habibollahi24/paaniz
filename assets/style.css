@@ -236,14 +236,15 @@ li {
   border: 2px solid #aaaaaa;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-image 0.8s ease-in-out;
+  background-image: linear-gradient(to right, #fff, #d1d1d1);
+  transition: all 0.3s ease-in-out;
   font-size: 20px;
   overflow: hidden;
 }
 .btn a {
   color: inherit;
 }
-.btn::after {
+/* .btn::after {
   position: absolute;
   z-index: -1;
   content: "";
@@ -256,9 +257,10 @@ li {
 
   left: -3%;
   top: -50%;
-}
-.btn:hover::after {
-  transform: translateX(220px);
+} */
+.btn:hover {
+  opacity: 70%;
+  border: 2px solid #777575;
 }
 
 .chevron-double {
@@ -609,7 +611,7 @@ footer {
     text-align: center !important;
     font-size: 2.5rem;
 
-    margin-bottom: 1.5rem;
+    margin-bottom: -2rem;
   }
 
   .hero {
@@ -687,6 +689,7 @@ footer {
   .about-me .title {
     text-align: left;
     margin-top: 1rem;
+    margin-bottom: 0 !important;
   }
   .about-image {
     width: 60%;
@@ -700,6 +703,8 @@ footer {
   }
   .impressum .title {
     text-align: left;
+    margin-top: -2rem;
+    margin-bottom: 1rem !important;
   }
 }
 
@@ -806,7 +811,7 @@ footer {
     display: block;
     overflow: hidden;
   }
-  @keyframes background-mobile-move {
+  @keyframes background-mobile-move-one {
     0% {
       transform: translate(-50%);
     }
@@ -823,16 +828,33 @@ footer {
       transform: translate(-50%);
     }
   }
+  @keyframes background-mobile-move-two {
+    0% {
+      transform: translate(50%);
+    }
+    25% {
+      transform: translate(-50%);
+    }
+    50% {
+      transform: translate(0, 30%);
+    }
+    75% {
+      transform: translate(0, -50%);
+    }
+    100% {
+      transform: translate(50%);
+    }
+  }
   .yellow-background {
     position: absolute;
     top: 7%;
     right: 0;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     background-color: #f9ffa4;
     border-radius: 100%;
     filter: blur(60px);
-    animation: background-mobile-move 13s infinite;
+    animation: background-mobile-move-one 13s infinite;
     z-index: -100;
     transform: translate(-50%);
     transition: 0.5s all ease-in-out;
@@ -842,24 +864,24 @@ footer {
     position: absolute;
     top: 2%;
     right: 0;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: #ffa1a1;
     border-radius: 100%;
     filter: blur(200px);
-    animation: background-mobile-move 13s infinite;
+    animation: background-mobile-move-two 13s infinite;
     z-index: -100;
   }
   .orange-background {
     position: absolute;
     top: 15%;
     right: 0%;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     background-color: #ffcaad;
     border-radius: 100%;
     filter: blur(60px);
-    animation: background-mobile-move 13s infinite;
+    animation: background-mobile-move-one 13s infinite;
 
     z-index: -100;
   }
@@ -867,12 +889,12 @@ footer {
     position: absolute;
     bottom: 50%;
     right: 0;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     background-color: #f9ffa4;
     border-radius: 100%;
     filter: blur(60px);
-    animation: background-mobile-move 13s infinite;
+    animation: background-mobile-move-two 13s infinite;
     z-index: -100;
     transform: translate(-50%);
   }
@@ -880,24 +902,24 @@ footer {
     position: absolute;
     bottom: 30%;
     right: 0;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: #ffa1a1;
     border-radius: 100%;
     filter: blur(180px);
-    animation: background-mobile-move 13s infinite;
+    animation: background-mobile-move-one 13s infinite;
     z-index: -100;
   }
   .orange-background-down {
     position: absolute;
     bottom: 10%;
     right: 0%;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     background-color: #ffcaad;
     border-radius: 100%;
     filter: blur(60px);
-    animation: background-mobile-move 13s infinite;
+    animation: background-mobile-move-two 13s infinite;
     z-index: -100;
   }
 }
