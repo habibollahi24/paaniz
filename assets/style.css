@@ -864,11 +864,11 @@ footer {
     position: absolute;
     top: 2%;
     right: 0;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     background-color: #ffa1a1;
     border-radius: 100%;
-    filter: blur(200px);
+    filter: blur(100px);
     animation: background-mobile-move-two 13s infinite;
     z-index: -100;
   }
