@@ -236,7 +236,7 @@ li {
   border: 2px solid #aaaaaa;
   border-radius: 5px;
   cursor: pointer;
-  background-image: linear-gradient(to right, #fff, #d1d1d1);
+  background-image: linear-gradient(to right, #fff, transparent);
   transition: all 0.3s ease-in-out;
   font-size: 20px;
   overflow: hidden;
@@ -259,7 +259,7 @@ li {
   top: -50%;
 } */
 .btn:hover {
-  opacity: 70%;
+  opacity: 60%;
   border: 2px solid #777575;
 }
 
