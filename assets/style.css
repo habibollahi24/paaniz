@@ -806,22 +806,7 @@ footer {
     display: block;
     overflow: hidden;
   }
-  .yellow-background {
-    position: absolute;
-    top: 7%;
-    right: 0;
-    width: 400px;
-    height: 400px;
-    background-color: #f9ffa4;
-    border-radius: 100%;
-    filter: blur(60px);
-    animation: yellow-move 13s infinite;
-    z-index: -100;
-    transform: translate(-50%);
-    /* border: 2px solid red; */
-    transition: 0.5s all ease-in-out;
-  }
-  @keyframes yellow-move {
+  @keyframes background-mobile-move {
     0% {
       transform: translate(-50%);
     }
@@ -838,6 +823,21 @@ footer {
       transform: translate(-50%);
     }
   }
+  .yellow-background {
+    position: absolute;
+    top: 7%;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background-color: #f9ffa4;
+    border-radius: 100%;
+    filter: blur(60px);
+    animation: background-mobile-move 13s infinite;
+    z-index: -100;
+    transform: translate(-50%);
+    transition: 0.5s all ease-in-out;
+  }
+
   .red-background {
     position: absolute;
     top: 2%;
@@ -847,7 +847,7 @@ footer {
     background-color: #ffa1a1;
     border-radius: 100%;
     filter: blur(200px);
-    animation: yellow-move 10s infinite;
+    animation: background-mobile-move 13s infinite;
     z-index: -100;
   }
   .orange-background {
@@ -859,7 +859,7 @@ footer {
     background-color: #ffcaad;
     border-radius: 100%;
     filter: blur(60px);
-    animation: yellow-move 10s infinite;
+    animation: background-mobile-move 13s infinite;
 
     z-index: -100;
   }
@@ -872,7 +872,7 @@ footer {
     background-color: #f9ffa4;
     border-radius: 100%;
     filter: blur(60px);
-    animation: yellow-move 10s infinite;
+    animation: background-mobile-move 13s infinite;
     z-index: -100;
     transform: translate(-50%);
   }
@@ -885,7 +885,7 @@ footer {
     background-color: #ffa1a1;
     border-radius: 100%;
     filter: blur(180px);
-    animation: yellow-move 10s infinite;
+    animation: background-mobile-move 13s infinite;
     z-index: -100;
   }
   .orange-background-down {
@@ -897,7 +897,7 @@ footer {
     background-color: #ffcaad;
     border-radius: 100%;
     filter: blur(60px);
-    animation: yellow-move 10s infinite;
+    animation: background-mobile-move 13s infinite;
     z-index: -100;
   }
 }
