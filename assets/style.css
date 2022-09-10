@@ -802,6 +802,40 @@ footer {
   }
   @keyframes background-mobile-move-one {
     0% {
+      transform: translate(0, -200%);
+    }
+    25% {
+      transform: translate(0, 200%);
+    }
+    50% {
+      transform: translate(0, -30%);
+    }
+    75% {
+      transform: translate(0, 200%);
+    }
+    100% {
+      transform: translate(0, -200%);
+    }
+  }
+  @keyframes background-mobile-move-two {
+    0% {
+      transform: translate(0, 200%);
+    }
+    25% {
+      transform: translate(0, -200%);
+    }
+    50% {
+      transform: translate(0, 30%);
+    }
+    75% {
+      transform: translate(0, -200%);
+    }
+    100% {
+      transform: translate(0, 200%);
+    }
+  }
+  /* @keyframes background-mobile-move-one {
+    0% {
       transform: translate(-200%);
     }
     25% {
@@ -833,7 +867,7 @@ footer {
     100% {
       transform: translate(200%);
     }
-  }
+  } */
   .yellow-background {
     position: absolute;
     top: 7%;
@@ -841,12 +875,13 @@ footer {
     width: 150px;
     height: 150px;
     background-color: #f9ffa4;
-    border-radius: 100%;
-    filter: blur(60px);
+    /* border-radius: 100%; */
+    /* filter: blur(60px); */
     animation: background-mobile-move-one 13s infinite;
     z-index: -100;
     transform: translate(-50%);
     transition: 0.5s all ease-in-out;
+    border: 1px solid red;
   }
 
   .red-background {
@@ -856,22 +891,24 @@ footer {
     width: 200px;
     height: 200px;
     background-color: #ffa1a1;
-    border-radius: 100%;
-    filter: blur(100px);
+    /* border-radius: 100%; */
+    /* filter: blur(100px); */
     animation: background-mobile-move-two 13s infinite;
     z-index: -100;
+    border: 1px solid red;
   }
   .orange-background {
     position: absolute;
     top: 15%;
-    right: 0%;
+    right: 0;
     width: 150px;
     height: 150px;
     background-color: #ffcaad;
-    border-radius: 100%;
-    filter: blur(60px);
+    /* border-radius: 100%; */
+    /* filter: blur(60px); */
     animation: background-mobile-move-one 13s infinite;
     z-index: -100;
+    border: 1px solid red;
   }
   .yellow-background-down {
     position: absolute;
@@ -880,11 +917,12 @@ footer {
     width: 150px;
     height: 150px;
     background-color: #f9ffa4;
-    border-radius: 100%;
-    filter: blur(60px);
+    /* border-radius: 100%; */
+    /* filter: blur(60px); */
     animation: background-mobile-move-two 13s infinite;
     z-index: -100;
     transform: translate(-50%);
+    border: 1px solid red;
   }
   .red-background-down {
     position: absolute;
@@ -893,21 +931,23 @@ footer {
     width: 150px;
     height: 150px;
     background-color: #ffa1a1;
-    border-radius: 100%;
-    filter: blur(180px);
+    /* border-radius: 100%; */
+    /* filter: blur(180px); */
     animation: background-mobile-move-one 13s infinite;
     z-index: -100;
+    border: 1px solid red;
   }
   .orange-background-down {
     position: absolute;
     bottom: 10%;
-    right: 0%;
+    right: 0;
     width: 150px;
     height: 150px;
     background-color: #ffcaad;
-    border-radius: 100%;
-    filter: blur(60px);
+    /* border-radius: 100%; */
+    /* filter: blur(60px); */
     animation: background-mobile-move-two 13s infinite;
     z-index: -100;
+    border: 1px solid red;
   }
 }
