@@ -56,7 +56,7 @@ li {
   margin-bottom: 60px;
 }
 .mb-8 {
-  margin-bottom: 8rem;
+  margin-bottom: 7rem;
 }
 .mb-10 {
   margin-bottom: 10rem !important;
@@ -803,35 +803,45 @@ footer {
   @keyframes background-mobile-move-one {
     0% {
       transform: translate(0, -200%);
+      right: 0;
     }
     25% {
       transform: translate(0, 200%);
+      right: 45%;
     }
     50% {
       transform: translate(0, -30%);
+      right: 45%;
     }
     75% {
       transform: translate(0, 200%);
+      right: 0;
     }
     100% {
       transform: translate(0, -200%);
+      right: 0;
     }
   }
   @keyframes background-mobile-move-two {
     0% {
-      transform: translate(0, 200%);
+      transform: translate(0, 100%);
+      right: 0;
     }
     25% {
-      transform: translate(0, -200%);
+      transform: translate(0, -100%);
+      right: 30%;
     }
     50% {
       transform: translate(0, 30%);
+      right: 30%;
     }
     75% {
-      transform: translate(0, -200%);
+      transform: translate(0, -100%);
+      right: 0;
     }
     100% {
-      transform: translate(0, 200%);
+      transform: translate(0, 100%);
+      right: 0;
     }
   }
   /* @keyframes background-mobile-move-one {
@@ -875,8 +885,8 @@ footer {
     width: 150px;
     height: 150px;
     background-color: #f9ffa4;
-    /* border-radius: 100%; */
-    /* filter: blur(60px); */
+    border-radius: 100%;
+    filter: blur(60px);
     animation: background-mobile-move-one 13s infinite;
     z-index: -100;
     transform: translate(-50%);
@@ -891,8 +901,8 @@ footer {
     width: 200px;
     height: 200px;
     background-color: #ffa1a1;
-    /* border-radius: 100%; */
-    /* filter: blur(100px); */
+    border-radius: 100%;
+    filter: blur(100px);
     animation: background-mobile-move-two 13s infinite;
     z-index: -100;
     border: 1px solid red;
@@ -904,8 +914,8 @@ footer {
     width: 150px;
     height: 150px;
     background-color: #ffcaad;
-    /* border-radius: 100%; */
-    /* filter: blur(60px); */
+    border-radius: 100%;
+    filter: blur(60px);
     animation: background-mobile-move-one 13s infinite;
     z-index: -100;
     border: 1px solid red;
@@ -917,8 +927,8 @@ footer {
     width: 150px;
     height: 150px;
     background-color: #f9ffa4;
-    /* border-radius: 100%; */
-    /* filter: blur(60px); */
+    border-radius: 100%;
+    filter: blur(60px);
     animation: background-mobile-move-two 13s infinite;
     z-index: -100;
     transform: translate(-50%);
@@ -931,8 +941,8 @@ footer {
     width: 150px;
     height: 150px;
     background-color: #ffa1a1;
-    /* border-radius: 100%; */
-    /* filter: blur(180px); */
+    border-radius: 100%;
+    filter: blur(180px);
     animation: background-mobile-move-one 13s infinite;
     z-index: -100;
     border: 1px solid red;
@@ -944,8 +954,8 @@ footer {
     width: 150px;
     height: 150px;
     background-color: #ffcaad;
-    /* border-radius: 100%; */
-    /* filter: blur(60px); */
+    border-radius: 100%;
+    filter: blur(60px);
     animation: background-mobile-move-two 13s infinite;
     z-index: -100;
     border: 1px solid red;
