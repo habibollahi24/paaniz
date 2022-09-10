@@ -80,12 +80,13 @@ li {
 .navigation-mobile {
   align-items: center;
   justify-content: flex-start;
-  padding: 30px 20px 0 30px;
+  /* padding: 30px 20px 0 30px; */
+  padding: 1rem 1.5rem;
 
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 210;
+  z-index: 999999999;
   width: 100%;
   transition: all 0.3s ease-in-out;
   display: none;
@@ -99,23 +100,26 @@ li {
 .menu-btn {
   cursor: pointer;
   position: relative;
-  z-index: 220;
+  z-index: 99999;
   /* background-color: red; */
-  backdrop-filter: blur(10px);
-  padding: 0.2rem;
+  /* backdrop-filter: blur(10px); */
+  /* padding: 0.2rem; */
   border-radius: 7px;
 }
 .menu-btn span {
   display: block;
-  width: 40px;
-  height: 6px;
+  width: 30px;
+  height: 4px;
   background-color: #474747;
-  margin-bottom: 4px;
+
   border-radius: 3px;
   transition: all 0.3s ease-in-out;
 }
+.menu-btn .first-line {
+  margin-bottom: 4px;
+}
 .animation-btn .first-line {
-  transform: translate(0px, 13px) rotate(45deg);
+  transform: translate(0px, 4px) rotate(45deg);
 }
 .animation-btn .second-line {
   transform: translate(-50px, 0);
@@ -123,7 +127,7 @@ li {
   visibility: hidden;
 }
 .animation-btn .third-line {
-  transform: translate(0px, -13px) rotate(-45deg);
+  transform: translate(0px, -4px) rotate(-45deg);
 }
 .navbar-mobile {
   position: fixed;
@@ -132,12 +136,13 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 8rem;
+
   align-items: center;
   width: 100vw;
   height: 100%;
   left: 0;
   top: 0;
-  z-index: 200;
+  z-index: 9999;
   transform: translate(-100%);
   transition: all 0.3s ease-in-out;
 }
@@ -159,7 +164,27 @@ li {
   margin-top: 5rem;
   display: none;
 }
-
+.mobile-logo-top {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+/* .mobile-logo-top a,
+.mobile-logo-top img {
+  display: block;
+} */
+.mobile-logo-top img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  width: 20%;
+  height: 20%;
+  margin-right: 0;
+  object-fit: cover;
+  text-align: right;
+}
 /* navigation */
 .navigation {
   display: flex;
@@ -198,6 +223,14 @@ li {
   }
   .navigation-mobile {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.89);
+    box-shadow: 1px 1px 40px rgb(236, 236, 236); */
+  }
+  .onscroll {
+    background-color: rgba(255, 255, 255, 0.89);
+    box-shadow: 1px 1px 40px rgb(236, 236, 236);
   }
   .mt-10 {
     margin-top: 10rem !important ;
