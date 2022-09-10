@@ -3,7 +3,8 @@
   height: 100%;
   /* padding: 5rem; */
   padding: 5rem 5rem 5rem 2rem;
-  /* border: 2px solid red; */
+  border: 2px solid red;
+  overflow-x: hidden;
 }
 
 .swiper-slide {
