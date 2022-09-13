@@ -349,11 +349,11 @@ li {
   transform: scale(0.99);
 }
 .my-work-container-left {
-  width: 50%;
+  width: 52%;
 }
 .my-work-container-right {
   padding: 4rem;
-  width: 50%;
+  width: 48%;
 }
 .my-work-container-right img {
   width: 100%;
